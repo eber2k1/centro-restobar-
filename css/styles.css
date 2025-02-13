@@ -1,0 +1,176 @@
+/* default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+
+/* Header y navegación */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff5733;
+    border-radius: 5px;
+}
+
+
+
+/* Layout principal */
+main {
+    padding: 20px;
+}
+
+.imglogo {
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* tarjetas (cards) */
+.menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.imgrestobar {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+.card {
+    background: white;
+    padding:15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    max-width: 250px;
+    margin: 15px auto;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.card p {
+    color: #ff5733;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    /* 📱 Smartphone: navegación en columna */
+    
+    .imgrestobar {
+        width: 100%;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+
+/* 🔥 Responsividad con Media Queries */
+/* 📱 Mobile First: 1 columna por defecto */
+@media (min-width: 768px) {
+    /* 🖥️ Tablet: 2 columnas */
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imgrestobar {
+        width: 100%;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    
+}
+
+@media (min-width: 1024px) {
+    /* 💻 Desktop: 3-4 columnas */
+    .menu {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
