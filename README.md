@@ -61,7 +61,7 @@ centro-restobar/
 
 
 ## 👨‍💻 Información de Contacto del Autor
-- **Tu Nombre** - [GitHub](https://github.com/eber2k1)
+- **github-eber2k1** - [GitHub](https://github.com/eber2k1)
 - 📧 Correo: lit27k@gmail.com
 
 ---
